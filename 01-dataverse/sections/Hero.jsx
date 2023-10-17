@@ -5,12 +5,12 @@ import { slideIn, staggerContainer, textVariant } from '../utils/motion';
 import styles from '../styles';
 
 const Hero = () => (
-  <section className={`${styles.yPaddings} ${styles.xPaddings} pr-0`}>
+  <section className={`${styles.yPaddings} sm:pl-16 lg:pr-16 pl-6 pr-0`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: true }}
+      viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} flex flex-col mx-auto z-10 relative`}
     >
       <motion.h1
@@ -29,9 +29,10 @@ const Hero = () => (
     </motion.div>
 
     <motion.div
-      variants={slideIn('right', 'tween', 0.2, 1)}
+      variants={slideIn('right', 'tween', 0.2, 0.5)}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: false }}
       className="relatives md:-mt-[20px] -mt-[12px] rounded-tl-[140px] z-[0]"
     >
       <div className="absolute w-full sm:h-[500px] h-[300px] hero-gradient -top-[30px] rounded-tl-[140px] z-[0]" />
@@ -45,7 +46,7 @@ const Hero = () => (
           <img
             src="/stamp.png"
             alt="stamp"
-            className="sm:w-[165px] w-[100px] sm:[h-165px] h-[100px] object-contain "
+            className="sm:w-[160px] w-[100px] sm:h-[160px] h-[100px] object-contain "
           />
         </div>
       </a>

@@ -9,8 +9,8 @@ const Navbar = () => (
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    viewport={{ once: true }}
-    className={` ${styles.yPaddings} w-full  sm:px-16 px-6 relative`}
+    viewport={{ once: false, amount: 0.25 }}
+    className={` ${styles.xPaddings} w-full py-8 relative`}
   >
     <div className="absolute gradient-01 inset-0 w-[50%]" />
     <div className="flex justify-between gap-8">
@@ -19,7 +19,7 @@ const Navbar = () => (
         alt="search"
         className="w-[24px] h-[24px] object-contain "
       />
-      <h1 className="text-white font-extrabold text-[24px]">DATAVERSE</h1>
+      <h1 className="text-white font-extrabold text-[24px] uppercase">dataversus</h1>
       <img
         src="/menu.svg"
         alt="hamburger"
