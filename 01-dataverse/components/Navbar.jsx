@@ -2,13 +2,15 @@
 
 import { motion } from 'framer-motion';
 import { navVariants } from '../utils/motion';
+import styles from '../styles';
 
 const Navbar = () => (
   <motion.nav
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className="w-full py-8 sm:px-16 px-6 relative"
+    viewport={{ once: true }}
+    className={` ${styles.yPaddings} w-full  sm:px-16 px-6 relative`}
   >
     <div className="absolute gradient-01 inset-0 w-[50%]" />
     <div className="flex justify-between gap-8">
