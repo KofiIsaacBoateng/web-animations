@@ -12,7 +12,7 @@ export const TypingText = ({ title, textStyles }) => (
       <motion.span
         variants={textVariant2}
         key={index}
-        className={`${textStyles} opacity-20 text-white font-normal sm:text-[25px] text-[18px]`}
+        className={`${textStyles} text-white font-normal sm:text-[25px] text-[18px]`}
       >
         {letter}
       </motion.span>
