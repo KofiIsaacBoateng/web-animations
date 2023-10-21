@@ -10,11 +10,17 @@ const Page = () => (
       <div className="gradient-03" />
       <Explore />
     </div>
-    <GetStarted />
-    <WhatsNew />
+    <div className="relative">
+      <GetStarted />
+      <div className="gradient-04" />
+      <WhatsNew />
+    </div>
     <World />
-    <Insights />
-    <Feedback />
+    <div className="relative">
+      <Insights />
+      <div className="gradient-04" />
+      <Feedback />
+    </div>
     <Footer />
   </div>
 );
