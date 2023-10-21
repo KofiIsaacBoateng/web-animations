@@ -15,7 +15,7 @@ const About = () => (
     >
       <TypingText title="| About Dataversus" textStyles="text-center" />
       <motion.p
-        variants={fadeIn('up', 'tween', 0.2, 1)}
+        variants={fadeIn('up', 'tween', 0.3, 1)}
         className="text-center text-secondary-white leading-loose font-normal md:text-[36px] text-[18px] sm:mt-[40px] mt-[25px] "
       >
         <span className="text-white font-extrabold">Dataverse</span> is a new thing in the future, where you can enjoy the virtual world by feeling like it's really real, you can feel what you feel in this dataverse world, because this is really the <span className="text-white font-extrabold">madness of the dataverse</span> today, using only <span className="text-white font-extrabold">VR</span>, you can easily explore the dataverse world you want, turn your dreams into reality. <span className="text-white font-extrabold">Explore</span> the madness of the dataverse by scrolling down.
