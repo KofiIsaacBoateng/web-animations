@@ -15,8 +15,7 @@ const GetStarted = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.xPaddings} mx-auto flex flex-col`}
     >
-      <TypingText title="| How Dataversus Work" textStyles="text-center" />
-      <div className="flex flex-1 md:flex-row flex-col mt-[25px]">
+      <div className="flex flex-1 md:flex-row flex-col mt-[25px] items-center justify-center">
         <motion.div
           variants={planetVariants('left')}
           className="flex-1 md:w-[30%] w-full"
@@ -27,9 +26,10 @@ const GetStarted = () => (
             className="w-9/10 h-9/10 object-contain"
           />
         </motion.div>
-        <div className="flex flex-col md:flex-[0.75] flex-1">
+        <div className="flex flex-col md:flex-[0.75] flex-1 md:-mt-[40px]">
+          <TypingText title="| How Dataversus Work" textStyles="text-center" />
           <TitleText title="Get Started With Just A Few Clicks" textStyles="text-center" />
-          <div className="flex flex-col mt-[31px] max-w-[370px]">
+          <div className="flex flex-col mt-[31px] max-w-[370px] gap-[24px]">
             {startingFeatures.map((feature, index) => (
               <StartSteps
                 key={index}
