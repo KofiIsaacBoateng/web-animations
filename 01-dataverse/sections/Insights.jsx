@@ -1,9 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import styles from '../styles'
-import { TitleText, TypingText } from '../components';
+import styles from '../styles';
+import { InsightCard, TitleText, TypingText } from '../components';
 import { staggerContainer } from '../utils/motion';
+import { insights } from '../constants';
 
 const Insights = () => (
   <section className={`${styles.yPaddings}`}>
@@ -16,6 +17,15 @@ const Insights = () => (
     >
       <TypingText title="| Insights" textStyles="text-center" />
       <TitleText title="Know more about the metaverse" textStyles="text-center" />
+      <div className="flex flex-col justify-center items-center">
+        {insights.map((insight, index) => (
+          <InsightCard
+            key={index}
+            {...insight}
+            index={index}
+          />
+        ))}
+      </div>
     </motion.div>
   </section>
 );
