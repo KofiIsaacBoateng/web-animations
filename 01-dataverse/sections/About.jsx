@@ -12,6 +12,7 @@ const About = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
+      className={`${styles.innerWidth} mx-auto relative`}
     >
       <TypingText title="| About Dataversus" textStyles="text-center" />
       <motion.p
@@ -22,7 +23,7 @@ const About = () => (
       </motion.p>
       <motion href="#explore">
         <motion.img
-          variants={fadeIn('down', 'spring', 2, 1)}
+          variants={fadeIn('down', 'spring', 1, 1)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}

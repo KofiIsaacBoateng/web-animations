@@ -33,13 +33,13 @@ const Hero = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false }}
-      className="relatives md:-mt-[20px] -mt-[12px] rounded-tl-[140px] z-[0]"
+      className="2xl:max-w-[1280px] w-full md:-mt-[20px] -mt-[12px] mx-auto rounded-tl-[140px] z-[0]"
     >
       <div className="absolute w-full sm:h-[500px] h-[300px] hero-gradient -top-[30px] rounded-tl-[140px] z-[0]" />
       <img
         src="/cover.png"
         alt="hero cover"
-        className="w-full sm:h-[500px] h-[300px] object-cover rounded-tl-[140px] z-10 relative"
+        className="relative w-full sm:h-[500px] h-[300px] object-cover rounded-tl-[140px] z-10"
       />
       <a href="#explore">
         <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[30px] relative z-10 ">
