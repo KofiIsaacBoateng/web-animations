@@ -27,8 +27,8 @@ const GetStarted = () => (
           />
         </motion.div>
         <div className="flex flex-col md:flex-[0.75] flex-1 md:-mt-[40px]">
-          <TypingText title="| How Dataversus Work" textStyles="text-center" />
-          <TitleText title="Get Started With Just A Few Clicks" textStyles="text-center" />
+          <TypingText title="| How Dataversus Work" textStyles="text-left" />
+          <TitleText title="Get Started With Just A Few Clicks" textStyles="text-left" />
           <div className="flex flex-col mt-[31px] max-w-[370px] gap-[24px]">
             {startingFeatures.map((feature, index) => (
               <StartSteps

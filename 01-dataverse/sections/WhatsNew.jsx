@@ -1,9 +1,10 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { staggerContainer, fadeIn, planetVariants } from '../utils/motion';
+import { staggerContainer, planetVariants } from '../utils/motion';
 import styles from '../styles';
-import { TitleText, TypingText } from '../components';
+import { NewFeatures, TitleText, TypingText } from '../components';
+import { newFeatures } from '../constants';
 
 const WhatsNew = () => (
   <section className={`${styles.yPaddings} flex flex-col relative`}>
@@ -12,11 +13,19 @@ const WhatsNew = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} flex mx-auto md:flex-row flex-col`}
+      className={`${styles.xPaddings} flex mx-auto md:flex-row flex-col`}
     >
       <div className="md:flex-[0.75] flex-1">
         <TypingText title="| What's New ?" textStyles="text-left" />
-        <TitleText title="What's new about Dataversus ?" textStyles="text-center" />
+        <TitleText title="What's new about Dataversus ?" textStyles="text-left" />
+        <div className="flex sm:flex-row flex-col mt-[31px]">
+          {newFeatures.map((feature, index) => (
+            <NewFeatures
+              key={index}
+              {...feature}
+            />
+          ))}
+        </div>
       </div>
       <motion.div
         variants={planetVariants('right')}
