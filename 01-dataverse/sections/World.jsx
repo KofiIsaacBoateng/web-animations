@@ -14,8 +14,8 @@ const World = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} relative mx-auto`}
     >
-      <TypingText title="| The World" textStyles="text-center" />
-      <TitleText title="Connect with people around the world" textStyles="text-center" />
+      <TypingText title="| People on the world" textStyles="text-center" />
+      <TitleText title={(<>Track friends around you and invite them to play together in the same world</>)} textStyles="text-center" />
       <motion.div
         variants={fadeIn('up', 'tween', 0.5, 0.5)}
         className="flex relative lg:h-[700px] md:[400px] h-[250px]"

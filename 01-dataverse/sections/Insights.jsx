@@ -17,7 +17,7 @@ const Insights = () => (
     >
       <TypingText title="| Insights" textStyles="text-center" />
       <TitleText title="Know more about the metaverse" textStyles="text-center" />
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center gap-14 mt-[100px]">
         {insights.map((insight, index) => (
           <InsightCard
             key={index}
