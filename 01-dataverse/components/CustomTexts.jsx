@@ -6,7 +6,7 @@ import { textContainer, textVariant2, fadeIn } from '../utils/motion';
 export const TypingText = ({ title, textStyles }) => (
   <motion.div
     variants={textContainer}
-    className="w-full relative text-center"
+    className="w-full relative"
   >
     {Array.from(title).map((letter, index) => (
       <motion.span
