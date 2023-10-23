@@ -13,7 +13,7 @@ const GetStarted = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.xPaddings} mx-auto flex flex-col`}
+      className={`${styles.xPaddings} ${styles.innerWidth} mx-auto flex flex-col`}
     >
       <div className="flex flex-1 md:flex-row flex-col mt-[25px] items-center justify-center">
         <motion.div

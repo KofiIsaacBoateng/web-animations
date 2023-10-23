@@ -12,7 +12,7 @@ const World = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} relative mx-auto`}
+      className={`${styles.innerWidth} ${styles.xPaddings} relative mx-auto`}
     >
       <TypingText title="| People on the world" textStyles="text-center" />
       <TitleText title={(<>Track friends around you and invite them to play together in the same world</>)} textStyles="text-center" />
@@ -51,7 +51,7 @@ const World = () => (
 
           <motion.div
             variants={fadeIn('up', 'spring', 1.5, 0.5, 45)}
-            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full top-[40%] left-[45%] flex items-center justify-center glassmorphism"
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full top-[22%] left-[43%] flex items-center justify-center glassmorphism"
           >
             <img
               src="people-03.png"

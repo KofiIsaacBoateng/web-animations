@@ -13,7 +13,7 @@ const WhatsNew = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.xPaddings} flex mx-auto md:flex-row flex-col`}
+      className={`${styles.xPaddings} ${styles.innerWidth} flex mx-auto md:flex-row flex-col`}
     >
       <div className="md:flex-[0.75] flex-1">
         <TypingText title="| What's New ?" textStyles="text-left" />

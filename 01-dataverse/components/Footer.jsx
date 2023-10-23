@@ -1,12 +1,19 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import styles from '../styles';
 import { TitleText } from './CustomTexts';
+import { fadeIn } from '../utils/motion';
 
 const Footer = () => (
   <footer className={`${styles.yPaddings} relative`}>
     <div className={`${styles.innerWidth} ${styles.xPaddings} mx-auto relative`}>
-      <div className="flex md:flex-row flex-col md:justify-between md:items-center mb-[30px]">
+      <motion.div
+        variants={fadeIn('up', 'spring', 0.25, 0.5)}
+        initial="hidden"
+        whileInView="show"
+        className="flex md:flex-row flex-col md:justify-between md:items-center mb-[30px]"
+      >
         <TitleText title="Enter the Dataverse" />
         <button
           type="button"
@@ -18,9 +25,14 @@ const Footer = () => (
           />
           <p className="text-[18px] md:text-[26px] text-white ">Enter Dataverse</p>
         </button>
-      </div>
+      </motion.div>
       <hr />
-      <div className="flex md:flex-row flex-col md:items-center md:justify-between gap-10 mt-[50px] ">
+      <motion.div
+        variants={fadeIn('down', 'spring', 0.75, 0.75)}
+        initial="hidden"
+        whileInView="show"
+        className="flex md:flex-row flex-col md:items-center md:justify-between gap-10 mt-[50px] "
+      >
         <div className="footer-gradient" />
         <h4 className="text-white text-[22px] font-semibold">Dataversus</h4>
         <p className="text-secondary-white sm:text-[18px] text-[15px] md:mx-auto">Copyright @2023 Dataversus. All rights reserved</p>
@@ -45,7 +57,7 @@ const Footer = () => (
             className="w-[20px] h-[20px]"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   </footer>
 );
