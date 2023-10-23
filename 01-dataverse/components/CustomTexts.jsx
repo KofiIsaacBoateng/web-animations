@@ -24,7 +24,7 @@ export const TypingText = ({ title, textStyles }) => (
 export const TitleText = ({ title, textStyles }) => (
   <motion.h2
     variants={fadeIn('up', 'tween', 0.2, 0.5)}
-    className={`${textStyles} text-white font-extrabold md:text-[45px] text-[25px] md:my-[40px] my-[25px] uppercase`}
+    className={`${textStyles} text-white font-extrabold md:text-[45px] text-[25px] md:my-[40px] my-[25px]`}
   >
     {title}
   </motion.h2>

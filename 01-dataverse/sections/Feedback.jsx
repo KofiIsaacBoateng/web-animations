@@ -16,8 +16,9 @@ const Feedback = () => (
     >
       <motion.div
         variants={fadeIn('left', 'tween', 0, 0.75)}
-        className="lg:w-[30%] w-full border p-3 lg:p-6 rounded-[24px] pt-[70px] lg:pt-[150px]"
+        className="lg:w-[30%] w-full border border-[#6a6a6a] p-3 lg:p-6 rounded-[24px] pt-[70px] lg:pt-[150px]"
       >
+        <div className="feedback-gradient" />
         <h3 className="text-white lg:text-[35px] text-[25px] mb-[10px]">Samantha</h3>
         <TypingText title="Founder | Dataversus" textStyles="text-left" />
         <p className="text-white lg:text[26px] text-[20px] mt-[35px] leading-[45px]">"With the development of today's technology, dataverse is very useful for today's work, or can be called web 3.0. You can use dataversus as anything!"</p>
