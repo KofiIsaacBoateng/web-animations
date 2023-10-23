@@ -29,23 +29,35 @@ const World = () => (
           viewport={{ once: false, amount: 0.25 }}
           className="absolute w-full h-full"
         >
-          <motion.img
+          <motion.div
             variants={fadeIn('up', 'spring', 1, 0.5)}
-            src="people-01.png"
-            className="z-[10] absolute md:w-[80px] w-[30px] top-[8%] left-[8%]"
-          />
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[8%] left-[8%] flex items-center justify-center glassmorphism"
+          >
+            <img
+              src="people-01.png"
+              className="absolute w-[70%] h-[70%] object-contain rotate-[-45deg]"
+            />
+          </motion.div>
 
-          <motion.img
-            variants={fadeIn('up', 'spring', 1.25, 0.5)}
-            src="people-02.png"
-            className="z-[10] absolute md:w-[80px] w-[30px] top-[2%] left-[70%]"
-          />
+          <motion.div
+            variants={fadeIn('up', 'spring', 1, 0.5)}
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[2%] left-[70%] flex items-center justify-center glassmorphism"
+          >
+            <img
+              src="people-02.png"
+              className="absolute w-[70%] h-[70%] object-contain rotate-[-45deg]"
+            />
+          </motion.div>
 
-          <motion.img
-            variants={fadeIn('up', 'spring', 1.5, 0.5)}
-            src="people-03.png"
-            className="z-[10] absolute md:w-[80px] w-[30px] top-[40%] left-[45%]"
-          />
+          <motion.div
+            variants={fadeIn('up', 'spring', 1, 0.5)}
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[40%] left-[45%] flex items-center justify-center glassmorphism"
+          >
+            <img
+              src="people-03.png"
+              className="absolute w-[70%] h-[70%] object-contain rotate-[-45deg]"
+            />
+          </motion.div>
         </motion.div>
       </motion.div>
     </motion.div>
