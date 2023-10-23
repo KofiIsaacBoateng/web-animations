@@ -89,7 +89,7 @@ export const textVariant2 = {
   },
 };
 
-export const fadeIn = (direction, type, delay, duration) => ({
+export const fadeIn = (direction, type, delay, duration, rotate = 0) => ({
   hidden: {
     x: direction === 'left' ? 100 : direction === 'right' ? -100 : 0,
     y: direction === 'up' ? 100 : direction === 'down' ? -100 : 0,
@@ -99,6 +99,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
     x: 0,
     y: 0,
     opacity: 1,
+    rotate,
     transition: {
       type,
       delay,

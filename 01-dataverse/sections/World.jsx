@@ -30,8 +30,8 @@ const World = () => (
           className="absolute w-full h-full"
         >
           <motion.div
-            variants={fadeIn('up', 'spring', 1, 0.5)}
-            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[8%] left-[8%] flex items-center justify-center glassmorphism"
+            variants={fadeIn('up', 'spring', 1, 0.5, 45)}
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full top-[8%] left-[8%] flex items-center justify-center glassmorphism"
           >
             <img
               src="people-01.png"
@@ -40,8 +40,8 @@ const World = () => (
           </motion.div>
 
           <motion.div
-            variants={fadeIn('up', 'spring', 1, 0.5)}
-            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[2%] left-[70%] flex items-center justify-center glassmorphism"
+            variants={fadeIn('up', 'spring', 1.25, 0.5, 45)}
+            className="z-[10] relative rotate-[45deg] md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full top-[2%] left-[70%] flex items-center justify-center glassmorphism"
           >
             <img
               src="people-02.png"
@@ -50,8 +50,8 @@ const World = () => (
           </motion.div>
 
           <motion.div
-            variants={fadeIn('up', 'spring', 1, 0.5)}
-            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full rotate-[45deg] top-[40%] left-[45%] flex items-center justify-center glassmorphism"
+            variants={fadeIn('up', 'spring', 1.5, 0.5, 45)}
+            className="z-[10] relative border md:w-[80px] w-[30px] md:h-[80px] h-[30px] rounded-t-full rounded-bl-full top-[40%] left-[45%] flex items-center justify-center glassmorphism"
           >
             <img
               src="people-03.png"
